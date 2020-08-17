@@ -36,9 +36,9 @@ $tweaks = @(
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"InstallAdobe",
 	"InstallChrome",
-	"InstallBrave",
+	#"InstallBrave",
 	"Install7Zip",
-	"InstallNotepadplusplus",
+	#"InstallNotepadplusplus",
 	"InstallMediaPlayerClassic",
 	"InstallVLC",
 	"InstallTeamSpeak",
@@ -46,9 +46,9 @@ $tweaks = @(
 	"InstallTeamViewer",
 	"InstalluTorrent",
 	"InstallHardDiskSentinel",
-	"InstallNvidiaDisplayDriver",
-	"InstallNvidiaGeforceNOW",
-	"InstallSamsungMagician",
+	#"InstallNvidiaDisplayDriver",
+	#"InstallNvidiaGeforceNOW",
+	#"InstallSamsungMagician",
 	
 
 	### Windows Apps
