@@ -44,8 +44,6 @@ $tweaks = @(
 	"InstalluTorrent",
 	"InstallHardDiskSentinel",
 	"InstallNvidiaDisplayDriver",
-	"InstallNvidiaGeforceNOW",
-	"InstallSamsungMagician",
 	"InstallSteelSeriesEngine",
 	
 
@@ -113,7 +111,7 @@ $tweaks = @(
 	# "DisableFastStartup",         # "EnableFastStartup",
 
 	### UI Tweaks ###
-	"DisableActionCenter",          # "EnableActionCenter",
+	# "DisableActionCenter",          # "EnableActionCenter",
 	"DisableLockScreen",            # "EnableLockScreen",
 	"DisableLockScreenRS1",       # "EnableLockScreenRS1",
 	# "HideNetworkFromLockScreen",    # "ShowNetworkOnLockScreen",
@@ -239,11 +237,6 @@ Function InstallNotepadplusplus {
 	choco install notepadplusplus -y
 }
 
-Function InstallMediaPlayerClassic {
-	Write-Output "Installing Media Player Classic (VLC Alternative)"
-	choco install mpc-hc -y
-}
-
 Function InstallVLC {
 	Write-Output "Installing VLC"
 	choco install vlc -y
@@ -277,16 +270,6 @@ Function InstallHardDiskSentinel {
 Function InstallNvidiaDisplayDriver {
 	Write-Output "Installing Nivida Display Driver"
 	choco install nvidia-display-driver -y
-}
-
-Function InstallNvidiaGeforceNOW {
-	Write-Output "Installing Nivida Geforce Now"
-	choco install nvidia-geforce-now -y
-}
-
-Function InstallSamsungMagician {
-	Write-Output "Installing Samsung Magician"
-	choco install samsung-magician -y
 }
 
 Function InstallSteelSeriesEngine {
