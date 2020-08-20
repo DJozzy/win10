@@ -23,7 +23,6 @@ Uninstalling OneDrive
 
 Installing Adobe, Chocolatey, Notepad++, MPC-HC, and 7-Zip
 
-Comment any thing you don't want out... Example:
 
 <h2>My modifications:</h2>
 
