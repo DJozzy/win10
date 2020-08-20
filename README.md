@@ -9,7 +9,7 @@ Dark Mode
 
 One Command to launch and run
 
-Chocolatey Install
+Chocolatey Install (For installing other programs easily)
 
 O&O Shutup10 CFG and Run
 
