@@ -23,9 +23,6 @@
 #	- Added Install Programs
 #	- Added Debloat Microsoft Store Apps
 #
-#       Jozzy:
-#	- Added plus programs
-#	- Enabled Indexing
 ##########
 # Default preset
 $tweaks = @(
@@ -38,17 +35,15 @@ $tweaks = @(
 	"InstallChrome",
 	#"InstallBrave",
 	"Install7Zip",
-	#"InstallNotepadplusplus",
-	"InstallMediaPlayerClassic",
+	"InstallNotepadplusplus",
 	"InstallVLC",
 	"InstallTeamSpeak",
 	"InstallSteam",
 	"InstallTeamViewer",
 	"InstalluTorrent",
 	"InstallHardDiskSentinel",
-	#"InstallNvidiaDisplayDriver",
-	#"InstallNvidiaGeforceNOW",
-	#"InstallSamsungMagician",
+	"InstallNvidiaDisplayDriver",
+	#"InstallSteelSeriesEngine",
 	
 
 	### Windows Apps
@@ -107,26 +102,26 @@ $tweaks = @(
 	"DisableStorageSense",        # "EnableStorageSense",
 	"DisableDefragmentation",     # "EnableDefragmentation",
 	"DisableSuperfetch",          # "EnableSuperfetch",
-	"EnableIndexing",			  #"DisableIndexing",            
+	#"EnableIndexing",			  #"DisableIndexing",            
 	"SetBIOSTimeUTC",             # "SetBIOSTimeLocal",
-	"DisableHibernation",		# "EnableHibernation",          # 
+	#"DisableHibernation",		# "EnableHibernation",          # 
 	"EnableSleepButton",		# "DisableSleepButton",         
 	"DisableSleepTimeout",        # "EnableSleepTimeout",
 	# "DisableFastStartup",         # "EnableFastStartup",
 
 	### UI Tweaks ###
-	"DisableActionCenter",          # "EnableActionCenter",
-	"DisableLockScreen",            # "EnableLockScreen",
-	"DisableLockScreenRS1",       # "EnableLockScreenRS1",
+	# "DisableActionCenter",          # "EnableActionCenter",
+	# "DisableLockScreen",            # "EnableLockScreen",
+	# "DisableLockScreenRS1",       # "EnableLockScreenRS1",
 	# "HideNetworkFromLockScreen",    # "ShowNetworkOnLockScreen",
 	# "HideShutdownFromLockScreen",   # "ShowShutdownOnLockScreen",
 	"DisableStickyKeys",            # "EnableStickyKeys",
 	"ShowTaskManagerDetails"        # "HideTaskManagerDetails",
 	"ShowFileOperationsDetails",    # "HideFileOperationsDetails",
-	"DisableFileDeleteConfirm",	# "EnableFileDeleteConfirm",    
+	# "DisableFileDeleteConfirm",	# "EnableFileDeleteConfirm",    
 	#"HideTaskbarSearch",
 	"ShowTaskbarSearchIcon",      # "ShowTaskbarSearchBox",
-	"HideTaskView",                 # "ShowTaskView",
+	#"HideTaskView",                 # "ShowTaskView",
 	# "ShowSmallTaskbarIcons",        # "ShowLargeTaskbarIcons",
 	# "SetTaskbarCombineWhenFull",    # "SetTaskbarCombineNever",     # "SetTaskbarCombineAlways",
 	# "HideTaskbarPeopleIcon",        # "ShowTaskbarPeopleIcon",
@@ -146,7 +141,7 @@ $tweaks = @(
 	"HideSyncNotifications"         # "ShowSyncNotifications",
 	# "HideRecentShortcuts",          # "ShowRecentShortcuts",
 	"SetExplorerThisPC",            # "SetExplorerQuickAccess",
-	"HideThisPCFromDesktop",	# "ShowThisPCOnDesktop",
+	#"HideThisPCFromDesktop",	# "ShowThisPCOnDesktop",
 	# "ShowUserFolderOnDesktop",    # "HideUserFolderFromDesktop",
 	# "HideDesktopFromThisPC",        # "ShowDesktopInThisPC",
 	# "HideDesktopFromExplorer",    # "ShowDesktopInExplorer",
@@ -154,12 +149,12 @@ $tweaks = @(
 	# "HideDocumentsFromExplorer",  # "ShowDocumentsInExplorer",
 	# "HideDownloadsFromThisPC",      # "ShowDownloadsInThisPC",
 	# "HideDownloadsFromExplorer",  # "ShowDownloadsInExplorer",
-	"HideMusicFromThisPC",          # "ShowMusicInThisPC",
-	"HideMusicFromExplorer",      # "ShowMusicInExplorer",
+	#"HideMusicFromThisPC",          # "ShowMusicInThisPC",
+	#"HideMusicFromExplorer",      # "ShowMusicInExplorer",
 	# "HidePicturesFromThisPC",       # "ShowPicturesInThisPC",
 	# "HidePicturesFromExplorer",   # "ShowPicturesInExplorer",
-	"HideVideosFromThisPC",         # "ShowVideosInThisPC",
-	"HideVideosFromExplorer",     # "ShowVideosInExplorer",
+	#"HideVideosFromThisPC",         # "ShowVideosInThisPC",
+	#"HideVideosFromExplorer",     # "ShowVideosInExplorer",
 	"Hide3DObjectsFromThisPC",      # "Show3DObjectsInThisPC",
 	"Hide3DObjectsFromExplorer",  # "Show3DObjectsInExplorer",
 	# "DisableThumbnails",          # "EnableThumbnails",
@@ -176,8 +171,8 @@ $tweaks = @(
 	"InstallMediaPlayer", 		# "UninstallMediaPlayer",
 	"UninstallInternetExplorer",  # "InstallInternetExplorer",
 	"UninstallWorkFolders",       # "InstallWorkFolders",
-	"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
-	# "InstallHyperV",              # "UninstallHyperV",
+	# "InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
+	"InstallHyperV",              # "UninstallHyperV",
 	"SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
 	"AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
 	"InstallPDFPrinter",		# "UninstallPDFPrinter",
@@ -201,9 +196,6 @@ $tweaks = @(
 	"Restart"
 )
 
-#########
-# Recommended Titus Programs
-#########
 
 Function InstallTitusProgs {
 	Write-Output "Installing Chocolatey"
@@ -241,11 +233,6 @@ Function InstallNotepadplusplus {
 	choco install notepadplusplus -y
 }
 
-Function InstallMediaPlayerClassic {
-	Write-Output "Installing Media Player Classic (VLC Alternative)"
-	choco install mpc-hc -y
-}
-
 Function InstallVLC {
 	Write-Output "Installing VLC"
 	choco install vlc -y
@@ -281,14 +268,9 @@ Function InstallNvidiaDisplayDriver {
 	choco install nvidia-display-driver -y
 }
 
-Function InstallNvidiaGeforceNOW {
-	Write-Output "Installing Nivida Geforce Now"
-	choco install nvidia-geforce-now -y
-}
-
-Function InstallSamsungMagician {
-	Write-Output "Installing Samsung Magician"
-	choco install samsung-magician -y
+Function InstallSteelSeriesEngine {
+	Write-Output "Installing SteelSeries Engine"
+	choco install steelseries-engine -y
 }
 
 ##########
