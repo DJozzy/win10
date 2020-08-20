@@ -1,7 +1,8 @@
 <h1>Windows 10 Debloat/Setting/Install script</h1>
 
 This is the Ultimate Windows 10 Script from a creation from multiple debloat scripts and gists from github. ChrisTitusTech also added Chocolatey and other tools to the script.
-(https://github.com/ChrisTitusTech/win10script/tree/master#win10script)
+
+CREDIT: (https://github.com/ChrisTitusTech/win10script/tree/master#win10script)
 
 <h2>ChrisTitusTech Additions</h2>
 
