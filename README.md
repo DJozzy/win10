@@ -22,7 +22,7 @@ Added Debloat Microsoft Store Apps
 
 Uninstalling OneDrive
 
-Installing Adobe, Chocolatey, Notepad++, MPC-HC, and 7-Zip
+Installing Adobe, Chocolatey, Notepad++, and 7-Zip
 
 
 <h2>My modifications:</h2>
@@ -30,7 +30,5 @@ Installing Adobe, Chocolatey, Notepad++, MPC-HC, and 7-Zip
 Action Center enabled.
 
 Hibernation Enabled
-
-Removed MPC-HC install
 
 Added programs that I think a default windows should have from the start. (win10debloatNAME.ps1 personalized)
