@@ -27,8 +27,16 @@ Installing Adobe, Chocolatey, Notepad++, and 7-Zip
 
 <h2>My modifications:</h2>
 
-Action Center enabled.
+Action Center enabled
 
-Hibernation Enabled
+Hibernation enabled
+
+Indexing ("Search Engine") enabled
+
+LockScreen enabled
+
+Linux sub-system not installed.
+
+Hyper-V installed
 
 Added programs that I think a default windows should have from the start. (win10debloatNAME.ps1 personalized)
