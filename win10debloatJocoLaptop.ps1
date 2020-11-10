@@ -43,7 +43,7 @@ $tweaks = @(
 	"InstalluTorrent",
 	"InstallHardDiskSentinel",
 	"InstallNvidiaDisplayDriver",
-	"InstallSteelSeriesEngine",
+	#"InstallSteelSeriesEngine",
 	
 
 	### Windows Apps
